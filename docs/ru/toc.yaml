@@ -1,24 +1,13 @@
-title: Docs navigationExample
-href: index.md
-navigation:
-  logo:
-    url: 'https://diplodoc.com'
-    dark:
-      icon: 'https://storage.yandexcloud.net/diplodoc-www-assets/logo/ddos-logo-dark.svg'
-      text: 'Diplodoc'
-    light:
-      icon: 'https://storage.yandexcloud.net/diplodoc-www-assets/navigation/diplodoc-logo.svg'
-      text: 'Diplodoc'
-  header:
-    leftItems:
-      - text: 'Relative Link'
-        type: 'link'
-        url: './ru/settings'
-      - text: 'Absolute Link'
-        type: 'link'
-        url: 'https://diplodoc.com/docs/ru/project/'
-    rightItems:
-      - text: 'Other Link'
-        type: 'link'
-        url: 'ru/contribution'
-      - type: controls
+title: Шаблон проекта документации
+href: index.yaml
+items: 
+  - name: О проекте
+    href: about.md
+  - name: Дополнительная страница
+    href: page.md
+  - name: Другая страница
+    href: anotherpage.md
+  - name: Подраздел
+    include:
+      path: sub-section/toc.yaml
+      mode: link
